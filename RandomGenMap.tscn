@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://5d17nr2d33t7"]
+
+[ext_resource type="Script" path="res://Map.gd" id="1_mcs84"]
+[ext_resource type="Script" path="res://Label.gd" id="2_i5o75"]
+
+[node name="RandomGenMap" type="Node2D"]
+script = ExtResource("1_mcs84")
+type_a_prob = 0.1
+type_b_prob = 0.2
+type_c_prob = 0.3
+type_d_prob = 0.4
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 1838.0
+offset_top = 879.0
+offset_right = 1982.0
+offset_bottom = 934.0
+theme_override_font_sizes/font_size = 30
+text = "Reset"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1660.0
+offset_top = 608.0
+offset_right = 2002.0
+offset_bottom = 785.0
+theme_override_font_sizes/font_size = 30
+text = "A
+B
+C
+D"
+script = ExtResource("2_i5o75")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
