@@ -1,6 +1,7 @@
 # Random Node Map Generator
 
-<img width="854" alt="image" src="https://github.com/zondug/random_node_map/assets/13306437/5d315461-f1ff-48ac-a3d1-c167a9e7108e">
+<img width="1136" alt="image" src="https://github.com/user-attachments/assets/5adcd9a7-e879-4e48-a079-07c57bf2da86">
+
 
 ## Godot AStar2D Map Generation and Path Finding
 
